@@ -34,17 +34,17 @@ int printidentifier(char next, va_list arg)
  *Return: Returns 0
  *
  */
-int _printf(char* format, ...)
+int _printf(char *format, ...)
 {
 	unsigned int i;
 	int identifier, count = 0;
 
 	va_list arg;
-	va_start(arg, format);
 
-	for (i=0; format[i] != '\0'; i++)
-	{	
-		if ( format[i] != '%')
+	va_start(arg, format);
+	for (i = 0; format[i] != '\0'; i++)
+	{
+		if( format[i] != '%')
 		{
 			_write(format[i]);
 			count++;

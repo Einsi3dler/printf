@@ -27,7 +27,7 @@ int print_int(va_list arg)
 	int n = va_arg(arg, int);
 
 	if (n < 0)
-	{	
+	{
 		_write('-');
 		charPrinted++;
 		n *= -1;
@@ -40,7 +40,7 @@ int print_int(va_list arg)
 	{
 		resp = n / divisor;
 		_write('0' + resp);
-	}	
+	}
 	return (charPrinted);
 }
 
