@@ -20,7 +20,7 @@ typedef struct handler
 } handler;
 
 
-//function prototypes
+
 int _write(char c);
 int _printf(char *,...);
 int print_char(va_list arg);

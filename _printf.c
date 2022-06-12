@@ -37,7 +37,6 @@ int printidentifier(char next, va_list arg)
 int _printf(char* format, ...)
 {
 	unsigned int i;
-	char *s;
 	int identifier, count = 0;
 
 	va_list arg;
